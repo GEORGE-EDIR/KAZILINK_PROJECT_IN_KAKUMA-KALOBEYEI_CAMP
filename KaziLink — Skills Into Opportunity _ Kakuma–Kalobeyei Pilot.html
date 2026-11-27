@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#activities -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KaziLink — Digital Mentorship and Skills-Based Employment Matching Project in Kakuma Refugee Camp and Kalobeyei Integrated Settlement, Kenya.">
+  <title>KaziLink — Skills Into Opportunity | Kakuma–Kalobeyei Pilot</title>
+  <style>
+    :root {
+      --paper: #f7f7f1;
+      --paper-alt: #efefe6;
+      --white: #ffffff;
+      --ink: #18231f;
+      --ink-soft: #36453f;
+      --muted: #5e6d66;
+      --deep-green: #142a23;
+      --dark-green: #203a30;
+      --lime: #d9f36a;
+      --lime-soft: #eff6d8;
+      --lime-text: #567016;
+      --sage: #e8eedd;
+      --coral: #ff9d82;
+      --coral-dark: #5c281a;
+      --lilac: #d8ccff;
+      --lilac-dark: #3d2c70;
+      --yellow: #f8d86b;
+      --blue: #b8dff2;
+      --line: #dce2d4;
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --shadow-card: 0 22px 54px rgba(20, 42, 35, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Top Accent Strip */
+    .top-bar-accent {
+      height: 5px;
+      background: linear-gradient(90deg, var(--lime) 0%, #a5db3b 50%, var(--coral) 100%);
+      width: 100%;
+    }
+
+    /* Sticky Website Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 247, 241, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--lime);
+      color: var(--deep-green);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--lime);
+      color: var(--deep-green);
+      box-shadow: 0 10px 24px rgba(154, 198, 43, 0.25);
+    }
+
+    .btn-dark {
+      background: var(--deep-green);
+      color: var(--lime);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 86px 0;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--lime-soft);
+      color: var(--lime-text);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .dark-section .eyebrow {
+      background: var(--dark-green);
+      color: var(--lime);
+    }
+
+    h1, h2, h3, h4 {
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      font-weight: 800;
+    }
+
+    h2.section-title {
+      font-size: clamp(2rem, 3.6vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    h2.section-title span {
+      color: var(--lime-text);
+    }
+
+    .dark-section h2.section-title span {
+      color: var(--lime);
+    }
+
+    p.section-lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .dark-section p.section-lead {
+      color: #c2d1c8;
+    }
+
+    /* Decorative Orbits */
+    .orbit {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* HERO SECTION (PITCH SLIDE 01) */
+    .hero-sec {
+      padding: 64px 0 84px;
+      overflow: hidden;
+    }
+
+    .hero-orbit-1 {
+      width: 520px;
+      height: 520px;
+      background: var(--sage);
+      top: -120px;
+      right: -120px;
+    }
+
+    .hero-orbit-2 {
+      width: 580px;
+      height: 580px;
+      border: 1.5px solid var(--line);
+      top: -90px;
+      right: -150px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-h1 {
+      font-size: clamp(2.6rem, 4.8vw, 4.15rem);
+      line-height: 1.02;
+      margin-bottom: 20px;
+    }
+
+    .hero-h1 span {
+      color: var(--lime-text);
+    }
+
+    .hero-desc {
+      font-size: 1.08rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 570px;
+    }
+
+    .location-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .hero-metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      background: var(--lime);
+      padding: 18px 22px;
+      border-radius: var(--radius-lg);
+    }
+
+    .hero-metrics-strip strong {
+      display: block;
+      font-size: 1.4rem;
+      color: var(--deep-green);
+      line-height: 1.1;
+    }
+
+    .hero-metrics-strip span {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--lime-text);
+    }
+
+    /* Interactive Talent Profile Preview Card */
+    .profile-card {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sticker-coral {
+      position: absolute;
+      top: -18px;
+      right: -14px;
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: var(--coral);
+      color: var(--coral-dark);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      line-height: 1.15;
+      transform: rotate(10deg);
+      border: 3px solid var(--white);
+      box-shadow: 0 12px 26px rgba(255, 157, 130, 0.35);
+    }
+
+    .pc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .pc-header small {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    .pc-pill {
+      background: var(--lime-soft);
+      color: var(--lime-text);
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .pc-user {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .pc-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      background: var(--lime);
+      color: var(--deep-green);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 1.05rem;
+    }
+
+    .pc-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 18px;
+    }
+
+    .pc-chips span {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .pc-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--paper);
+      padding: 12px 14px;
+      border-radius: 14px;
+      margin-top: 10px;
+    }
+
+    .pc-step-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex: 0 0 auto;
+    }
+
+    /* CHALLENGE & TARGET GROUP (PITCH SLIDE 02) */
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .barriers-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .barrier-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .barrier-item:hover {
+      transform: translateX(4px);
+    }
+
+    .b-num {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex: 0 0 auto;
+    }
+
+    .target-card {
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .target-card h3 {
+      font-size: 1.55rem;
+      margin: 10px 0 18px;
+    }
+
+    .target-ul {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      font-size: 0.95rem;
+      color: #dce7e1;
+    }
+
+    .target-ul li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .target-ul span {
+      background: var(--lime);
+      color: var(--deep-green);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-top: 3px;
+    }
+
+    .target-footer-note {
+      margin-top: 22px;
+      background: var(--dark-green);
+      padding: 14px 16px;
+      border-radius: 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--lime);
+    }
+
+    /* DARK SECTION: OBJECTIVES (PITCH SLIDE 03) */
+    .dark-section {
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .objectives-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .obj-box {
+      background: var(--dark-green);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 22px;
+      padding: 22px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 270px;
+    }
+
+    .obj-box.featured {
+      background: var(--lime);
+      color: var(--deep-green);
+      border-color: var(--lime);
+    }
+
+    .obj-badge-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .obj-box h3 {
+      font-size: 1.12rem;
+      margin-bottom: 8px;
+    }
+
+    .obj-box p {
+      font-size: 0.88rem;
+      color: #c6d5cc;
+    }
+
+    .obj-box.featured p {
+      color: var(--dark-green);
+    }
+
+    /* ACTIVITIES BENTO (PITCH SLIDE 04) */
+    .act-row-top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .act-row-bot {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .activity-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+
+    .activity-card.sage {
+      background: var(--sage);
+    }
+
+    .act-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .activity-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .activity-card ul {
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: grid;
+      gap: 6px;
+    }
+
+    /* SIX-MONTH WORK PLAN (PITCH SLIDE 05) */
+    .workplan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .wp-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+
+    .wp-card.sage { background: var(--sage); }
+    .wp-card.lime { background: var(--lime); border-color: var(--lime); }
+
+    .wp-bar {
+      width: 46px;
+      height: 5px;
+      border-radius: 99px;
+      margin-bottom: 14px;
+    }
+
+    .wp-pill {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: var(--lime-soft);
+      color: var(--lime-text);
+      margin-bottom: 10px;
+    }
+
+    .wp-card.lime .wp-pill {
+      background: var(--deep-green);
+      color: var(--lime);
+    }
+
+    .wp-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 8px;
+    }
+
+    .wp-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .wp-card.lime p {
+      color: var(--dark-green);
+    }
+
+    /* TARGETS & EXPECTED RESULTS (PITCH SLIDE 06) */
+    .targets-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .kpi-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+
+    .kpi-box.lime { background: var(--lime); border-color: var(--lime); }
+    .kpi-box.dark { background: var(--deep-green); color: var(--white); border-color: var(--deep-green); }
+
+    .kpi-box strong {
+      display: block;
+      font-size: 2.25rem;
+      line-height: 1.05;
+      color: var(--lime-text);
+      margin-bottom: 6px;
+    }
+
+    .kpi-box.lime strong { color: var(--deep-green); }
+    .kpi-box.dark strong { color: var(--lime); }
+
+    .kpi-box span {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .outcomes-panel {
+      background: var(--sage);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+    }
+
+    .outcomes-panel h4 {
+      font-size: 0.78rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--lime-text);
+      margin-bottom: 16px;
+    }
+
+    .outcome-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      padding: 13px 16px;
+      border-radius: 14px;
+      margin-bottom: 10px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .check-circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--lime);
+      color: var(--deep-green);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 0.8rem;
+      flex: 0 0 auto;
+    }
+
+    /* MONITORING & EVALUATION (PITCH SLIDE 07) */
+    .me-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .me-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+    }
+
+    .me-card.sage { background: var(--sage); }
+    .me-card.lime { background: var(--lime); border-color: var(--lime); }
+
+    .indicators-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+    }
+
+    .ind-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 32px;
+      margin-top: 14px;
+    }
+
+    .ind-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .ind-badge {
+      background: var(--lime-soft);
+      color: var(--lime-text);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 9px;
+      border-radius: 7px;
+    }
+
+    /* RISKS & SAFEGUARDS (PITCH SLIDE 08) */
+    .risks-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+
+    .risks-table th {
+      background: var(--deep-green);
+      color: var(--lime);
+      text-align: left;
+      padding: 14px 20px;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .risks-table th:first-child { border-radius: 14px 0 0 14px; }
+    .risks-table th:last-child { border-radius: 0 14px 14px 0; }
+
+    .risks-table td {
+      background: var(--white);
+      padding: 16px 20px;
+      font-size: 0.94rem;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .risks-table tr:nth-child(even) td {
+      background: var(--sage);
+    }
+
+    .risks-table td:first-child {
+      border-left: 1px solid var(--line);
+      border-radius: 14px 0 0 14px;
+      font-weight: 700;
+      width: 34%;
+    }
+
+    .risks-table td:last-child {
+      border-right: 1px solid var(--line);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* SUSTAINABILITY & RESOURCES (PITCH SLIDE 09) */
+    .sus-res-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .sus-box {
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+    }
+
+    .sus-box ul {
+      list-style: none;
+      margin-top: 18px;
+      display: grid;
+      gap: 12px;
+      font-size: 0.94rem;
+      color: #d6e2dc;
+    }
+
+    .res-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+    }
+
+    .res-box ul {
+      list-style: none;
+      margin-top: 16px;
+      display: grid;
+      gap: 11px;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .res-box li::before {
+      content: "● ";
+      color: #8bb528;
+      margin-right: 6px;
+    }
+
+    /* NEXT STEPS & INTERACTIVE INVOLVEMENT SECTION (PITCH SLIDE 10) */
+    .steps-6-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .step-item {
+      background: var(--dark-green);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .step-tag {
+      display: inline-block;
+      padding: 4px 11px;
+      border-radius: 8px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--deep-green);
+      margin-bottom: 12px;
+    }
+
+    .step-item p {
+      font-size: 0.92rem;
+      color: #e3ece7;
+    }
+
+    /* Interactive Action & Inquiry Panel */
+    .engage-wrapper {
+      background: var(--white);
+      color: var(--ink);
+      border-radius: var(--radius-xl);
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .role-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 18px;
+    }
+
+    .role-tab {
+      border: 1.5px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .role-tab.active {
+      background: var(--lime);
+      border-color: var(--lime);
+      color: var(--deep-green);
+    }
+
+    .form-row {
+      margin-bottom: 12px;
+    }
+
+    .form-row label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .form-row input, .form-row textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1.5px solid var(--line);
+      font-family: inherit;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      background: #0e1f1a;
+      color: #9eb4a4;
+      padding: 36px 0;
+      font-size: 0.86rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .hero-grid, .challenge-grid, .targets-grid, .sus-res-grid, .engage-wrapper { grid-template-columns: 1fr; }
+      .objectives-grid { grid-template-columns: repeat(2, 1fr); }
+      .act-row-top, .act-row-bot, .workplan-grid, .me-grid, .steps-6-grid, .ind-list { grid-template-columns: 1fr; }
+      .hero-metrics-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar-accent"></div>
+
+  <!-- Sticky Website Navigation -->
+  <header>
+    <div class="nav-wrap">
+      <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#top" class="brand">
+        <span class="brand-logo">K</span>
+        <span>KaziLink</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Website Sections">
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#challenge">01 Challenge</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#objectives">02 Objectives</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#activities">03 Activities</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#workplan">04 Work Plan</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#targets">05 Targets</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#evaluation">06 M&amp;E</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#safeguards">07 Safeguards</a>
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#sustainability">08 Resources</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#next-steps" class="btn btn-dark">Get Involved ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- SECTION 01: HERO (PITCH DECK COVER) -->
+    <section class="hero-sec">
+      <div class="orbit hero-orbit-1"></div>
+      <div class="orbit hero-orbit-2"></div>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">● A Proposed Community-Informed Pilot</div>
+          <h1 class="hero-h1">Skills are everywhere.<br><span>Opportunity should be, too.</span></h1>
+          <p class="hero-desc">
+            A Digital Mentorship and Skills-Based Employment Matching Project connecting refugee and host-community youth (aged 18–30) in Kakuma–Kalobeyei with mentors, practical experience, and pathways to work.
+          </p>
+          <div class="location-badge">
+            📍 Kakuma Refugee Camp &amp; Kalobeyei Integrated Settlement, Turkana County, Kenya
+          </div>
+          <div class="hero-cta-row">
+            <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#next-steps" class="btn btn-primary">Partner With KaziLink ↗</a>
+            <a href="file:///C:/Users/USER/Downloads/kazilink-full-pitch-website.html#objectives" class="btn btn-outline">Explore the Pitch ↓</a>
+          </div>
+          <div class="hero-metrics-strip">
+            <div><strong>6 Months</strong><span>Pilot Duration</span></div>
+            <div><strong>50 Youth</strong><span>Ages 18–30</span></div>
+            <div><strong>15 Mentors</strong><span>Career Support</span></div>
+            <div><strong>5 Partners</strong><span>Local &amp; Org</span></div>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="sticker-coral">Talent<br>meets<br>pathway</div>
+          <div class="pc-header">
+            <small>KAZILINK PROFILE</small>
+            <span class="pc-pill">Skills-first</span>
+          </div>
+          <div class="pc-user">
+            <div class="pc-avatar">KL</div>
+            <div>
+              <strong style="display:block; font-size:1.05rem;">Youth Talent Profile</strong>
+              <span style="font-size:0.82rem; color:var(--muted);">Skills · Projects · Training · Goals</span>
+            </div>
+          </div>
+          <div class="pc-chips">
+            <span>Digital &amp; ICT</span>
+            <span>Technical Trades</span>
+            <span>Enterprise</span>
+            <span>Community Work</span>
+          </div>
+          <div class="pc-step">
+            <div class="pc-step-icon" style="background:var(--coral); color:var(--coral-dark);">M</div>
+            <div>
+              <strong style="display:block; font-size:0.9rem;">1-on-1 Mentorship</strong>
+              <small style="color:var(--muted); font-size:0.78rem;">Career guidance &amp; practical action plan</small>
+            </div>
+          </div>
+          <div class="pc-step">
+            <div class="pc-step-icon" style="background:var(--lilac); color:var(--lilac-dark);">✳</div>
+            <div>
+              <strong style="display:block; font-size:0.9rem;">Practical Experience</strong>
+              <small style="color:var(--muted); font-size:0.78rem;">Supervised assignments &amp; verified feedback</small>
+            </div>
+          </div>
+          <div class="pc-step">
+            <div class="pc-step-icon" style="background:var(--lime); color:var(--deep-green);">↗</div>
+            <div>
+              <strong style="display:block; font-size:0.9rem;">Consent-Based Opportunity Match</strong>
+              <small style="color:var(--muted); font-size:0.78rem;">Matched to internships, fellowships &amp; paid work</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: PROBLEM STATEMENT & TARGET GROUP -->
+    <section id="challenge">
+      <div class="container">
+        <div class="eyebrow">● 01 / Problem Statement &amp; Target Group</div>
+        <h2 class="section-title">Potential is present. <span>Access is the missing link.</span></h2>
+        <p class="section-lead">
+          Many young people in Kakuma and Kalobeyei have relevant abilities, yet face four structural barriers when entering employment.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="barriers-list">
+            <div class="barrier-item">
+              <div class="b-num" style="background:var(--lime); color:var(--deep-green);">01</div>
+              <div>
+                <strong style="display:block; font-size:1.02rem;">Limited Professional Networks</strong>
+                <span style="font-size:0.9rem; color:var(--muted);">Youth often lack direct connections to mentors, references, and hiring partners.</span>
+              </div>
+            </div>
+            <div class="barrier-item">
+              <div class="b-num" style="background:var(--coral); color:var(--coral-dark);">02</div>
+              <div>
+                <strong style="display:block; font-size:1.02rem;">Few Practical Experience Opportunities</strong>
+                <span style="font-size:0.9rem; color:var(--muted);">Structured fellowships, returnships, and work-based assignments are scarce.</span>
+              </div>
+            </div>
+            <div class="barrier-item">
+              <div class="b-num" style="background:var(--lilac); color:var(--lilac-dark);">03</div>
+              <div>
+                <strong style="display:block; font-size:1.02rem;">Difficulty Demonstrating Skills</strong>
+                <span style="font-size:0.9rem; color:var(--muted);">Employers often rely solely on formal work history or personal referrals.</span>
+              </div>
+            </div>
+            <div class="barrier-item">
+              <div class="b-num" style="background:var(--yellow); color:var(--ink);">04</div>
+              <div>
+                <strong style="display:block; font-size:1.02rem;">Unreliable Pathway Information</strong>
+                <span style="font-size:0.9rem; color:var(--muted);">Reliable guidance on training, placements, and available jobs is hard to navigate.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="target-card">
+            <div>
+              <span style="font-size:0.76rem; font-weight:800; letter-spacing:0.1em; color:var(--lime);">TARGET PARTICIPANTS</span>
+              <h3>50 Youth Aged 18–30<br>Refugee &amp; Host Communities</h3>
+              <ul class="target-ul">
+                <li><span>01</span> Young people seeking their first employment opportunity</li>
+                <li><span>02</span> Individuals with skills but limited formal work experience</li>
+                <li><span>03</span> Graduates or trainees seeking practical work exposure</li>
+                <li><span>04</span> People returning to work after a period away from employment</li>
+              </ul>
+            </div>
+            <div class="target-footer-note">
+              ✓ Selection will be transparent, inclusive, and guided by clear eligibility criteria.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PROJECT GOAL & FIVE OBJECTIVES (DARK BAND) -->
+    <section id="objectives" class="dark-section">
+      <div class="container">
+        <div class="eyebrow">● 02 / Project Goal &amp; Specific Objectives</div>
+        <h2 class="section-title">One connected pathway <span>from skills to opportunity.</span></h2>
+        <p class="section-lead">
+          <strong>Overall Goal:</strong> Improve access to professional networks, practical experience, and employment opportunities for refugee and host-community youth in Kakuma–Kalobeyei.
+        </p>
+
+        <div class="objectives-grid">
+          <div class="obj-box">
+            <div>
+              <div class="obj-badge-icon" style="background:var(--lime); color:var(--deep-green);">◎</div>
+              <small style="color:var(--lime); font-weight:800; font-size:0.74rem;">OBJECTIVE 01</small>
+              <h3>Mentorship</h3>
+              <p>Connect participants with mentors who provide career guidance and professional support.</p>
+            </div>
+          </div>
+          <div class="obj-box">
+            <div>
+              <div class="obj-badge-icon" style="background:var(--coral); color:var(--coral-dark);">✳</div>
+              <small style="color:var(--coral); font-weight:800; font-size:0.74rem;">OBJECTIVE 02</small>
+              <h3>Practical Experience</h3>
+              <p>Create practical opportunities through short fellowships, returnships, work-based projects, or supervised assignments.</p>
+            </div>
+          </div>
+          <div class="obj-box">
+            <div>
+              <div class="obj-badge-icon" style="background:var(--lilac); color:var(--lilac-dark);">↗</div>
+              <small style="color:var(--lilac); font-weight:800; font-size:0.74rem;">OBJECTIVE 03</small>
+              <h3>Skills-Based Profiles</h3>
+              <p>Help participants document their skills and experience in accessible, skills-based profiles.</p>
+            </div>
+          </div>
+          <div class="obj-box">
+            <div>
+              <div class="obj-badge-icon" style="background:var(--yellow); color:var(--ink);">⌁</div>
+              <small style="color:var(--yellow); font-weight:800; font-size:0.74rem;">OBJECTIVE 04</small>
+              <h3>Talent Matching</h3>
+              <p>Connect qualified participants with employers and organizations seeking people with demonstrated skills.</p>
+            </div>
+          </div>
+          <div class="obj-box featured">
+            <div>
+              <div class="obj-badge-icon" style="background:var(--deep-green); color:var(--lime);">★</div>
+              <small style="color:var(--deep-green); font-weight:800; font-size:0.74rem;">OBJECTIVE 05</small>
+              <h3>Local Partnerships</h3>
+              <p>Build partnerships that support inclusive employment pathways in the local community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: FIVE MAIN PROJECT ACTIVITIES -->
+    <section id="activities">
+      <div class="container">
+        <div class="eyebrow">● 03 / Main Project Activities</div>
+        <h2 class="section-title">Five integrated building blocks <span>for youth readiness.</span></h2>
+        <p class="section-lead">
+          Combining human mentorship, safe practical assignments, and consent-driven skills matching.
+        </p>
+
+        <div class="act-row-top">
+          <div class="activity-card sage">
+            <span class="act-tag" style="background:var(--lime); color:var(--deep-green);">ACTIVITY 01</span>
+            <h3>Participant Outreach &amp; Skills Assessment</h3>
+            <ul>
+              <li>Share project information through community networks and local organizations</li>
+              <li>Invite applications using simple and accessible methods</li>
+              <li>Assess participants' interests, existing skills, and career goals</li>
+              <li>Create a baseline record of skills and employment needs</li>
+            </ul>
+          </div>
+
+          <div class="activity-card">
+            <span class="act-tag" style="background:var(--coral); color:var(--coral-dark);">ACTIVITY 02</span>
+            <h3>Mentorship</h3>
+            <ul>
+              <li>Recruit and orient volunteer or paid mentors</li>
+              <li>Match participants and mentors based on interests, skills, and goals</li>
+              <li>Hold regular mentorship sessions</li>
+              <li>Support participants to develop practical career plans</li>
+            </ul>
+          </div>
+
+          <div class="activity-card">
+            <span class="act-tag" style="background:var(--lilac); color:var(--lilac-dark);">ACTIVITY 03</span>
+            <h3>Practical Experience</h3>
+            <ul>
+              <li>Identify short, supervised assignments with partner organizations</li>
+              <li>Set clear expectations and learning objectives for each placement</li>
+              <li>Provide feedback and a record of completed work</li>
+              <li>Ensure placements are safe, fair, and do not replace paid staff</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="act-row-bot">
+          <div class="activity-card">
+            <span class="act-tag" style="background:var(--yellow); color:var(--ink);">ACTIVITY 04</span>
+            <h3>Skills-Based Profiles &amp; Matching</h3>
+            <ul>
+              <li>Help participants create profiles showing their skills, projects, training, and experience</li>
+              <li>Use a simple digital tool or database to organize profiles and opportunities</li>
+              <li>Match participants to opportunities based on stated skill requirements</li>
+              <li>Obtain informed consent before sharing participant information with employers</li>
+            </ul>
+          </div>
+
+          <div class="activity-card">
+            <span class="act-tag" style="background:var(--blue); color:var(--ink);">ACTIVITY 05</span>
+            <h3>Employer &amp; Community Partnerships</h3>
+            <ul>
+              <li>Engage local businesses, NGOs, community organizations, and training providers</li>
+              <li>Identify opportunities for interviews, projects, internships, fellowships, or paid work</li>
+              <li>Gather ongoing feedback from partners and participants to improve the project</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: PROPOSED SIX-MONTH WORK PLAN -->
+    <section id="workplan" style="background:var(--paper-alt);">
+      <div class="container">
+        <div class="eyebrow">● 04 / Proposed Six-Month Work Plan</div>
+        <h2 class="section-title">Start small. <span>Learn together.</span></h2>
+        <p class="section-lead">
+          A phased six-month schedule moving from community consultation and setup to mentorship, assignments, and end-of-pilot evaluation.
+        </p>
+
+        <div class="workplan-grid">
+          <div class="wp-card">
+            <div class="wp-bar" style="background:var(--lime);"></div>
+            <span class="wp-pill">MONTH 01</span>
+            <h3>Consultation &amp; Setup</h3>
+            <p>Community consultation, partner outreach, project setup, and participant recruitment.</p>
+          </div>
+          <div class="wp-card">
+            <div class="wp-bar" style="background:var(--coral);"></div>
+            <span class="wp-pill">MONTH 02</span>
+            <h3>Assess &amp; Orient</h3>
+            <p>Skills assessments, mentor recruitment, and participant orientation.</p>
+          </div>
+          <div class="wp-card sage">
+            <div class="wp-bar" style="background:var(--lilac);"></div>
+            <span class="wp-pill">MONTH 03</span>
+            <h3>Mentorship &amp; Profiles</h3>
+            <p>Mentorship begins; participant skills-based profiles are developed.</p>
+          </div>
+          <div class="wp-card sage">
+            <div class="wp-bar" style="background:var(--yellow);"></div>
+            <span class="wp-pill">MONTH 04</span>
+            <h3>Assignments &amp; Matching</h3>
+            <p>Practical assignments and skills-based matching begin.</p>
+          </div>
+          <div class="wp-card">
+            <div class="wp-bar" style="background:var(--blue);"></div>
+            <span class="wp-pill">MONTH 05</span>
+            <h3>Employer Engagement</h3>
+            <p>Employer engagement, interviews, and continued mentorship.</p>
+          </div>
+          <div class="wp-card lime">
+            <div class="wp-bar" style="background:var(--deep-green);"></div>
+            <span class="wp-pill">MONTH 06</span>
+            <h3>Review &amp; Next Phase</h3>
+            <p>Follow-up, evaluation, partner review, and planning for the next phase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: PROPOSED PILOT TARGETS & EXPECTED RESULTS -->
+    <section id="targets">
+      <div class="container">
+        <div class="eyebrow">● 05 / Proposed Pilot Targets &amp; Expected Results</div>
+        <h2 class="section-title">Clear planning benchmarks. <span>Meaningful outcomes.</span></h2>
+        <p class="section-lead">
+          <strong>Note:</strong> The figures below are initial planning targets—not confirmed results—and will be reviewed after local consultation and resource confirmation.
+        </p>
+
+        <div class="targets-grid">
+          <div class="kpi-grid">
+            <div class="kpi-box lime"><strong>50</strong><span>Participants enrolled</span></div>
+            <div class="kpi-box"><strong>15</strong><span>Mentors recruited</span></div>
+            <div class="kpi-box"><strong>5</strong><span>Employer / partner orgs</span></div>
+            <div class="kpi-box"><strong>40</strong><span>Complete mentorship</span></div>
+            <div class="kpi-box"><strong>30</strong><span>Interview or referral</span></div>
+            <div class="kpi-box dark"><strong>15</strong><span>Verified work outcomes</span></div>
+          </div>
+
+          <div class="outcomes-panel">
+            <h4>Expected End-of-Pilot Results</h4>
+            <div class="outcome-row"><span class="check-circle">✓</span> Participants with clearer career plans and stronger professional connections</div>
+            <div class="outcome-row"><span class="check-circle">✓</span> Skills-based profiles that help participants communicate their abilities</div>
+            <div class="outcome-row"><span class="check-circle">✓</span> Practical work or project experience for participating youth</div>
+            <div class="outcome-row"><span class="check-circle">✓</span> Stronger connections between youth, mentors, and potential employers</div>
+            <div class="outcome-row" style="margin-bottom:0;"><span class="check-circle">✓</span> A tested approach that can be improved and expanded if successful</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: MONITORING & EVALUATION -->
+    <section id="evaluation" style="background:var(--paper-alt);">
+      <div class="container">
+        <div class="eyebrow">● 06 / Monitoring &amp; Evaluation</div>
+        <h2 class="section-title">Tracking progress and <span>learning from every step.</span></h2>
+        <p class="section-lead">
+          KaziLink will track progress through a short baseline assessment, monthly activity records, and an end-of-pilot review.
+        </p>
+
+        <div class="me-grid">
+          <div class="me-card">
+            <span class="wp-pill" style="background:var(--coral); color:var(--coral-dark);">STAGE 1 · BASELINE</span>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Short Baseline Assessment</h3>
+            <p style="font-size:0.9rem; color:var(--muted);">Captures participants' starting skills, interests, employment needs, and career goals at entry.</p>
+          </div>
+          <div class="me-card sage">
+            <span class="wp-pill" style="background:var(--lilac); color:var(--lilac-dark);">STAGE 2 · ONGOING</span>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Monthly Activity Records</h3>
+            <p style="font-size:0.9rem; color:var(--muted);">Logs participation, mentorship sessions completed, assignments, referrals, and emerging challenges.</p>
+          </div>
+          <div class="me-card lime">
+            <span class="wp-pill">STAGE 3 · ENDLINE</span>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">End-of-Pilot Review</h3>
+            <p style="font-size:0.9rem; color:var(--dark-green);">Assesses verified work outcomes alongside participant and partner feedback to guide future phases.</p>
+          </div>
+        </div>
+
+        <div class="indicators-box">
+          <small style="font-size:0.78rem; font-weight:800; letter-spacing:0.08em; color:var(--lime-text);">CORE INDICATORS TRACKED ACROSS THE PILOT</small>
+          <div class="ind-list">
+            <div class="ind-item"><span class="ind-badge">01</span> Number of participants recruited and completing activities</div>
+            <div class="ind-item"><span class="ind-badge">02</span> Number of mentors and partners engaged</div>
+            <div class="ind-item"><span class="ind-badge">03</span> Mentorship sessions completed</div>
+            <div class="ind-item"><span class="ind-badge">04</span> Practical assignments and referrals provided</div>
+            <div class="ind-item"><span class="ind-badge">05</span> Interviews, paid assignments, and employment outcomes</div>
+            <div class="ind-item"><span class="ind-badge">06</span> Participant and partner qualitative feedback</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08: KEY RISKS & SAFEGUARDS -->
+    <section id="safeguards">
+      <div class="container">
+        <div class="eyebrow">● 07 / Key Risks &amp; Safeguards</div>
+        <h2 class="section-title">Opportunity must be <span>safe, fair, and accountable.</span></h2>
+        <p class="section-lead">
+          Proactive safeguards built into participant onboarding, data privacy, and workplace placements.
+        </p>
+
+        <table class="risks-table">
+          <thead>
+            <tr>
+              <th>Identified Pilot Risk</th>
+              <th>KaziLink Proposed Response &amp; Safeguard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="dot" style="background:var(--lime);"></span>Limited employer opportunities</td>
+              <td>Start with a small number of realistic partners (target: 5) and expand gradually.</td>
+            </tr>
+            <tr>
+              <td><span class="dot" style="background:var(--coral);"></span>Digital access barriers</td>
+              <td>Offer offline or assisted registration and profile support alongside digital tools.</td>
+            </tr>
+            <tr>
+              <td><span class="dot" style="background:var(--lilac);"></span>Participant data privacy</td>
+              <td>Collect only necessary information and obtain informed consent before sharing.</td>
+            </tr>
+            <tr>
+              <td><span class="dot" style="background:var(--yellow);"></span>Unfair or unsafe placements</td>
+              <td>Use written expectations, supervision, safeguarding procedures, and fair compensation where applicable.</td>
+            </tr>
+            <tr>
+              <td><span class="dot" style="background:var(--blue);"></span>Low mentor availability</td>
+              <td>Recruit a diverse mentor pool (target: 15) and set clear, realistic time commitments.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 09: SUSTAINABILITY & PRELIMINARY RESOURCE NEEDS -->
+    <section id="sustainability" style="background:var(--paper-alt);">
+      <div class="container">
+        <div class="eyebrow">● 08 / Sustainability &amp; Preliminary Resource Needs</div>
+        <h2 class="section-title">Designed to learn <span>before it grows.</span></h2>
+        <p class="section-lead">
+          Expansion beyond the initial pilot will depend on demonstrated results, participant safety, and available resources.
+        </p>
+
+        <div class="sus-res-grid">
+          <div class="sus-box">
+            <span style="font-size:0.76rem; font-weight:800; letter-spacing:0.1em; color:var(--lime);">LONG-TERM SUSTAINABILITY MODEL</span>
+            <h3 style="font-size:1.4rem; margin-top:8px;">Anchored in local partnerships &amp; verified outcomes</h3>
+            <ul>
+              <li>✓ Partnerships with local community organizations and training providers</li>
+              <li>✓ Volunteer or paid mentor networks</li>
+              <li>✓ Employer participation and co-investment</li>
+              <li>✓ Future funding from grants or social-impact programs</li>
+              <li>✓ Expansion strictly guided by demonstrated results, safety &amp; resources</li>
+            </ul>
+          </div>
+
+          <div class="res-box">
+            <span class="eyebrow" style="margin-bottom:10px;">PRELIMINARY RESOURCE NEEDS (BUDGETED IN KES)</span>
+            <p style="font-size:0.9rem; color:var(--muted);">A detailed budget in Kenyan shillings will be prepared after confirming the delivery model and local costs across seven core areas:</p>
+            <ul>
+              <li>Project coordination and administration</li>
+              <li>Community outreach and participant communication</li>
+              <li>Mentor orientation and support</li>
+              <li>Training materials and skills assessments</li>
+              <li>Digital tools, connectivity, and data protection</li>
+              <li>Transport or accessibility support where needed</li>
+              <li>Monitoring, evaluation, and reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: IMMEDIATE NEXT STEPS & INTERACTIVE PARTNERSHIP SECTION -->
+    <section id="next-steps" class="dark-section">
+      <div class="container">
+        <div class="eyebrow">● 09 / Immediate Next Steps &amp; Call to Action</div>
+        <h2 class="section-title">Building the right foundations <span>before recruitment.</span></h2>
+        <p class="section-lead">
+          Recruitment begins only after community roles, resources, KES budget, and participant protections are clearly established.
+        </p>
+
+        <div class="steps-6-grid">
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--lime);">STEP 01</span>
+            <p>Consult young people and relevant community stakeholders in Kakuma and Kalobeyei.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--coral);">STEP 02</span>
+            <p>Identify a local organization or community partner to support implementation.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--lilac);">STEP 03</span>
+            <p>Confirm the pilot’s eligibility criteria, safeguarding arrangements, and delivery capacity.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--yellow);">STEP 04</span>
+            <p>Validate the proposed targets and prepare a detailed budget in Kenyan shillings.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--blue);">STEP 05</span>
+            <p>Approach potential mentors and employers with a concise project brief.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-tag" style="background:var(--lime);">STEP 06</span>
+            <p>Begin recruitment only after roles, resources, and participant protections are clear.</p>
+          </div>
+        </div>
+
+        <div class="engage-wrapper">
+          <div>
+            <span class="eyebrow">● Collaborate With KaziLink</span>
+            <h3 style="font-size:1.75rem; margin-bottom:10px;">Talent is here. Let’s connect it to opportunity.</h3>
+            <p style="color:var(--muted); font-size:0.95rem; margin-bottom:18px;">
+              Whether you are a young person (aged 18–30) in Kakuma or Kalobeyei, an experienced mentor, an employer, or a local partner organization, we welcome your voice in shaping this pilot.
+            </p>
+            <div style="background:var(--sage); padding:16px 18px; border-radius:16px; font-size:0.9rem;">
+              <strong style="display:block; margin-bottom:4px;">Direct Pilot Inquiry Email</strong>
+              <a href="mailto:georgetaban256@gmail.com?subject=KaziLink%20Pilot%20Partnership" style="color:var(--lime-text); font-weight:800; text-decoration:none;">
+                georgetaban256@gmail.com ↗
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <strong style="font-size:0.92rem;">Select how you would like to participate:</strong>
+            <div class="role-tabs" id="roleTabs">
+              <button type="button" class="role-tab active" data-role="Youth Participant (Aged 18–30)">Youth (18–30)</button>
+              <button type="button" class="role-tab" data-role="Prospective Mentor">Mentor</button>
+              <button type="button" class="role-tab" data-role="Employer / Partner Organization">Employer / Partner</button>
+              <button type="button" class="role-tab" data-role="Community Stakeholder / Funder">Supporter / Funder</button>
+            </div>
+
+            <form id="interestForm">
+              <input type="hidden" id="selectedRole" value="Youth Participant (Aged 18–30)">
+              <div class="form-row">
+                <label for="fullName">Full Name or Organization</label>
+                <input type="text" id="fullName" placeholder="e.g., Amina Hassan or Kakuma Youth Initiative" required="">
+              </div>
+              <div class="form-row">
+                <label for="contactInfo">Phone / WhatsApp or Email</label>
+                <input type="text" id="contactInfo" placeholder="e.g., +254 7XX XXX XXX or email address" required="">
+              </div>
+              <div class="form-row">
+                <label for="notes">Skills, Experience, or Collaboration Interest</label>
+                <textarea id="notes" rows="2" placeholder="Share your background or how you would like to engage..." required=""></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Submit Interest</button>
+              <div id="formFeedback" style="display:none; margin-top:12px; padding:12px; border-radius:12px; background:var(--lime-soft); color:var(--lime-text); font-size:0.86rem; font-weight:700;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        <strong style="color:var(--white);">KaziLink</strong> — Digital Mentorship and Skills-Based Employment Matching Pilot Proposal
+      </div>
+      <div>
+        Kakuma Refugee Camp &amp; Kalobeyei Integrated Settlement, Turkana County, Kenya · Contact: <a href="mailto:georgetaban256@gmail.com" style="color:var(--lime); text-decoration:none;">georgetaban256@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.role-tab');
+    const roleInput = document.getElementById('selectedRole');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        roleInput.value = tab.dataset.role;
+      });
+    });
+
+    const form = document.getElementById('interestForm');
+    const feedback = document.getElementById('formFeedback');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('fullName').value.trim();
+      const role = roleInput.value;
+      feedback.style.display = 'block';
+      feedback.textContent = `Thank you, ${name}! Your interest as a ${role} has been recorded for the KaziLink Kakuma–Kalobeyei pilot consultation. You can also email georgetaban256@gmail.com directly.`;
+      form.reset();
+    });
+  </script>
+
+
+</body></html>
